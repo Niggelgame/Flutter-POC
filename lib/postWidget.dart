@@ -40,6 +40,7 @@ class _PostWidgetState extends State<PostWidget> {
           children: <Widget>[
             /// These two should stay the same, since with the creation of the widget, the init-State is triggered
             /// But Because of some reason, the resultString seems to change and take the value of the Widget in the Column, it was in first.
+            /// It partly even seems like the widgets itself get their state changed
             Text("Generated Index " + resultString),
 
             /// The retrieved index is the index the PostWidget got from the initState override of _MyHomePageState
