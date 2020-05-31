@@ -80,9 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(
             height: 20,
           ),
-          Column(
-            children: postWidgets,
-          ),
+          ...postWidgets,
           CupertinoActivityIndicator()
         ],
       ),
